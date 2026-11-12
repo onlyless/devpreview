@@ -61,7 +61,7 @@ DevPreview 只做一件事：**在 Finder 里按空格，看到足够做判断�
 
 ### 下载安装包
 
-从 [Releases](https://github.com/onlyless/devpreview/releases/latest) 下载 `DevPreview-1.0.1-macOS.zip`，解压后把 `DevPreview.app` 拖进 `/Applications`。
+从 [Releases](https://github.com/onlyless/devpreview/releases/latest) 下载 `DevPreview-1.0.2-macOS.zip`，解压后把 `DevPreview.app` 拖进 `/Applications`。
 
 安装包使用 ad-hoc 签名，首次打开会被 Gatekeeper 拦截。任选一种方式：
 

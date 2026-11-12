@@ -233,7 +233,7 @@ struct ContentView: View {
 private struct AppIconView: View {
     var body: some View {
         Group {
-            if let image = NSApp.applicationIconImage {
+            if let image = AppIconProvider.image ?? NSApp.applicationIconImage {
                 Image(nsImage: image)
                     .resizable()
                     .interpolation(.high)
