@@ -40,5 +40,11 @@ xcodebuild \
   build \
   "${SIGN_ARGS[@]}"
 
+APP_PATH="${DERIVED_DATA}/Build/Products/${CONFIGURATION}/DevPreview.app"
+LSREGISTER="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister"
+if [[ -x "$LSREGISTER" ]]; then
+  "$LSREGISTER" -u "$APP_PATH" >/dev/null 2>&1 || true
+fi
+
 echo
-echo "Built: ${DERIVED_DATA}/Build/Products/${CONFIGURATION}/DevPreview.app"
+echo "Built: ${APP_PATH}"

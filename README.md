@@ -61,7 +61,7 @@ DevPreview 只做一件事：**在 Finder 里按空格，看到足够做判断�
 
 ### 下载安装包
 
-从 [Releases](https://github.com/onlyless/devpreview/releases/latest) 下载 `DevPreview-1.0.0-macOS.zip`，解压后把 `DevPreview.app` 拖进 `/Applications`。
+从 [Releases](https://github.com/onlyless/devpreview/releases/latest) 下载 `DevPreview-1.0.1-macOS.zip`，解压后把 `DevPreview.app` 拖进 `/Applications`。
 
 安装包使用 ad-hoc 签名，首次打开会被 Gatekeeper 拦截。任选一种方式：
 
@@ -166,10 +166,10 @@ python3 scripts/generate_xcodeproj.py
 重新生成图标：
 
 ```bash
-python3 scripts/generate_icon.py
+swift scripts/generate_icon.swift
 ```
 
-两个脚本只依赖 Python 标准库。
+工程生成脚本只依赖 Python 标准库；图标脚本使用系统自带的 Swift 和 AppKit。
 
 ### 改了代码但预览没变化
 

@@ -13,7 +13,7 @@ uninstall:
 	./scripts/uninstall.sh
 
 icon:
-	python3 scripts/generate_icon.py
+	swift scripts/generate_icon.swift
 
 project:
 	python3 scripts/generate_xcodeproj.py
