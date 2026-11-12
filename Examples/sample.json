@@ -1,0 +1,14 @@
+{
+  "name": "DevPreview",
+  "version": "1.0",
+  "enabled": true,
+  "supported": {
+    "languages": ["swift", "go", "rust", "python", "typescript"],
+    "configs": ["json", "yaml", "toml", "ini"],
+    "documents": ["markdown", "diff", "log"]
+  },
+  "limits": {
+    "readBytes": 8388608,
+    "highlightBytes": 2097152
+  }
+}

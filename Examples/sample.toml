@@ -1,0 +1,11 @@
+[app]
+name = "DevPreview"
+version = "1.0"
+enabled = true
+
+[limits]
+read_bytes = 8388608
+highlight_bytes = 2097152
+
+[supported]
+languages = ["swift", "go", "rust", "python", "typescript"]

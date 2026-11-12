@@ -1,0 +1,16 @@
+diff --git a/Examples/sample.swift b/Examples/sample.swift
+index 3f7a2c1..9b4d8e0 100644
+--- a/Examples/sample.swift
++++ b/Examples/sample.swift
+@@ -1,6 +1,8 @@
+ import Foundation
+-// Old comment
++// DevPreview 示例：在 Finder 中按空格查看此文件
++// 支持语法高亮和行号
+ 
+ struct PreviewItem {
+     let name: String
+-    let language: String
++    let language: String
++    let extensions: [String]
+ }
